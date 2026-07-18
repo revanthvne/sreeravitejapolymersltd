@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sree Raviteja Polymers Limited — Polymer Trading & Distribution | A Mantralaya Group Company</title>
-  <meta name="description" content="Sree Raviteja Polymers Limited (SRPL) — specialized polymer trading and distribution company with a pan-India network, expanding across domestic and international markets. A Mantralaya Group Company.">
+  <title>Sree Raviteja Polymers Limited — All Kinds of Plastic Products | A Mantralaya Group Company</title>
+  <meta name="description" content="Sree Raviteja Polymers Limited (SRPL) — all kinds of plastic products: packaging products, plastic sutli, garment bags, non-woven fabric, jewellery package bags, milk pouches and more, with pan-India distribution. A Mantralaya Group Company.">
   <link rel="canonical" href="https://www.sreeravitejapolymersltd.com/">
   <meta name="theme-color" content="#0B0E13">
   <link rel="icon" type="image/png" href="mg-logo.png">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Sree Raviteja Polymers Limited — Polymer Trading & Distribution">
-  <meta property="og:description" content="Specialized polymer trading and distribution company with a pan-India network, expanding across domestic and international markets. A Mantralaya Group Company.">
+  <meta property="og:title" content="Sree Raviteja Polymers Limited — All Kinds of Plastic Products">
+  <meta property="og:description" content="Packaging products, plastic sutli, garment bags, non-woven fabric, jewellery package bags, milk pouches and more — with pan-India distribution. A Mantralaya Group Company.">
   <meta property="og:url" content="https://www.sreeravitejapolymersltd.com/">
   <meta property="og:image" content="https://www.sreeravitejapolymersltd.com/srpl-logo-light.png">
   <meta name="twitter:card" content="summary">
@@ -97,7 +97,7 @@
     .menu-toggle { display: none; font-size: 24px; cursor: pointer; color: var(--ink); }
 
     /* ===== HERO ===== */
-    .hero-wrap { position: relative; background: var(--ink-deep); overflow: hidden; }
+    .hero-wrap { position: relative; background: var(--ink-deep); overflow: hidden; padding-bottom: 58px; }
     .hero-wrap::before { content: ''; position: absolute; inset: 0;
       background:
         linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
@@ -108,6 +108,18 @@
     }
     .hero-wrap::after { content: ''; position: absolute; top: -200px; right: -160px; width: 640px; height: 640px; border-radius: 50%; background: radial-gradient(circle, rgba(232,115,26,0.10), transparent 68%); filter: blur(60px); }
     .hero-content { position: relative; z-index: 2; padding: 110px 0 96px; max-width: 880px; }
+    .typewriter-line { font-size: 19px; color: var(--orange-light); font-weight: 400; min-height: 30px; margin-bottom: 26px; }
+    .typewriter-line .cursor { display: inline-block; width: 2px; height: 22px; background: var(--orange); margin-left: 2px; animation: blink 0.7s infinite; vertical-align: middle; box-shadow: 0 0 8px rgba(232,115,26,0.5); }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    .hero-glow-b { position: absolute; width: 460px; height: 460px; border-radius: 50%; background: radial-gradient(circle, rgba(232,115,26,0.08), transparent 68%); bottom: -120px; left: -120px; filter: blur(70px); animation: floatGlow 9s ease-in-out infinite; }
+    @keyframes floatGlow { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(26px,-18px) scale(1.08); } }
+    .brand-marquee { position: absolute; bottom: 0; left: 0; right: 0; z-index: 2; background: rgba(0,0,0,0.35); border-top: 1px solid rgba(232,115,26,0.12); overflow: hidden; padding: 16px 0; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+    .brand-marquee .marquee-track { display: flex; gap: 52px; width: max-content; animation: marqueeScroll 34s linear infinite; }
+    .brand-marquee:hover .marquee-track { animation-play-state: paused; }
+    .brand-marquee .m-item { display: inline-flex; align-items: center; gap: 52px; font-size: 13px; font-weight: 800; letter-spacing: 2.6px; color: rgba(255,255,255,0.38); text-transform: uppercase; white-space: nowrap; }
+    .brand-marquee .m-item::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--orange); opacity: 0.6; flex-shrink: 0; }
+    @keyframes marqueeScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .brand-marquee .marquee-track { animation: none; } }
     .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(232,115,26,0.28); border-radius: 6px; padding: 8px 16px; margin-bottom: 30px; background: rgba(232,115,26,0.06); }
     .hero-eyebrow span { font-size: 10px; font-weight: 700; color: var(--orange-light); letter-spacing: 3px; text-transform: uppercase; }
     .hero-title { font-family: var(--serif); font-size: 58px; font-weight: 700; color: var(--white); line-height: 1.08; letter-spacing: -0.5px; margin-bottom: 22px; }
@@ -304,8 +316,8 @@
         <nav class="nav-links">
           <a href="#overview">Overview</a>
           <a href="#segments">Business</a>
+          <a href="#range">Products</a>
           <a href="#strengths">Strengths</a>
-          <a href="#investors">Investors</a>
           <a href="#contact">Contact</a>
           <a href="#contact" class="btn-primary">Enquire <i class="ri-arrow-right-up-line"></i></a>
         </nav>
@@ -315,13 +327,15 @@
 
   <!-- HERO -->
   <section class="hero-wrap">
+    <div class="hero-glow-b" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-content">
         <div class="hero-eyebrow"><span>A Mantralaya Group Company</span></div>
-        <h1 class="hero-title">Polymer trading &amp; distribution,<br>built for <em>scale.</em></h1>
-        <p class="hero-desc">Sree Raviteja Polymers Limited is a specialized polymer trading and distribution company expanding across domestic and international markets — delivering quality-assured raw materials through a pan-India network with timely, reliable supply.</p>
+        <h1 class="hero-title">All kinds of <em>plastic products,</em><br>built for scale.</h1>
+        <div class="typewriter-line"><span id="typewriter-text"></span><span class="cursor"></span></div>
+        <p class="hero-desc">Sree Raviteja Polymers Limited supplies all kinds of plastic products — packaging products, plastic sutli, garment bags, non-woven fabric, jewellery package bags and milk pouches — alongside polymer trading and distribution, through a pan-India network with timely, reliable supply.</p>
         <div class="hero-actions">
-          <a href="#segments" class="btn-primary">Our Business <i class="ri-arrow-right-line"></i></a>
+          <a href="https://www.productsandstores.com" target="_blank" rel="noopener" class="btn-primary">Explore Products <i class="ri-arrow-right-up-line"></i></a>
           <a href="brochures/SRPL-Brochure.pdf" target="_blank" rel="noopener" class="btn-outline">Company Brochure <i class="ri-download-2-line"></i></a>
         </div>
       </div>
@@ -342,6 +356,28 @@
           <div class="hs-number"><span class="accent">Bulk</span> &amp; Retail</div>
           <div class="hs-label">Flexible Supply — From Bulk Industrial to Smaller Retail Quantities</div>
         </div>
+      </div>
+    </div>
+    <div class="brand-marquee" aria-label="Our product range">
+      <div class="marquee-track">
+        <span class="m-item">Packaging Products</span>
+        <span class="m-item">Plastic Sutli</span>
+        <span class="m-item">Garment Bags</span>
+        <span class="m-item">Non-Woven Fabric</span>
+        <span class="m-item">Jewellery Package Bags</span>
+        <span class="m-item">Milk Pouches</span>
+        <span class="m-item">BOPP Bags</span>
+        <span class="m-item">Treated Rolls &amp; Films</span>
+        <span class="m-item">Ropes</span>
+        <span class="m-item" aria-hidden="true">Packaging Products</span>
+        <span class="m-item" aria-hidden="true">Plastic Sutli</span>
+        <span class="m-item" aria-hidden="true">Garment Bags</span>
+        <span class="m-item" aria-hidden="true">Non-Woven Fabric</span>
+        <span class="m-item" aria-hidden="true">Jewellery Package Bags</span>
+        <span class="m-item" aria-hidden="true">Milk Pouches</span>
+        <span class="m-item" aria-hidden="true">BOPP Bags</span>
+        <span class="m-item" aria-hidden="true">Treated Rolls &amp; Films</span>
+        <span class="m-item" aria-hidden="true">Ropes</span>
       </div>
     </div>
   </section>
@@ -419,14 +455,21 @@
     <div class="container">
       <div class="fade-up" style="text-align:center;">
         <div class="section-label" style="justify-content:center;">Product Range</div>
-        <h2 class="section-title">What we supply</h2>
+        <h2 class="section-title">All kinds of plastic products</h2>
       </div>
       <div class="hex-grid fade-up">
-        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-drop-line" aria-hidden="true"></i><span>Domestic Polymer Raw Materials</span></div></div></div></div>
-        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-global-line" aria-hidden="true"></i><span>Imported Polymer Granules</span></div></div></div></div>
-        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-stack-line" aria-hidden="true"></i><span>PP &amp; PE Varieties</span></div></div></div></div>
-        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-settings-3-line" aria-hidden="true"></i><span>Specialty &amp; Engineering Plastics</span></div></div></div></div>
-        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-truck-line" aria-hidden="true"></i><span>Bulk &amp; Retail Supply</span></div></div></div></div>
+        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-archive-line" aria-hidden="true"></i><span>Packaging Products</span></div></div></div></div>
+        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-links-line" aria-hidden="true"></i><span>Plastic Sutli &amp; Twine</span></div></div></div></div>
+        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-t-shirt-line" aria-hidden="true"></i><span>Garment Bags</span></div></div></div></div>
+        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-shopping-bag-3-line" aria-hidden="true"></i><span>Non-Woven Bags &mdash; Printed &amp; Plain</span></div></div></div></div>
+        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-vip-diamond-line" aria-hidden="true"></i><span>Jewellery Package Bags</span></div></div></div></div>
+        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-cup-line" aria-hidden="true"></i><span>Milk Pouches</span></div></div></div></div>
+        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-shopping-bag-line" aria-hidden="true"></i><span>BOPP Bags</span></div></div></div></div>
+        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-film-line" aria-hidden="true"></i><span>Treated Rolls &amp; Packaging Films</span></div></div></div></div>
+        <div class="hexagon"><div class="hx-outer"><div class="hx-ring"><div class="hx-core"><i class="ri-lifebuoy-line" aria-hidden="true"></i><span>Ropes</span></div></div></div></div>
+      </div>
+      <div class="fade-up" style="text-align:center;margin-top:48px;">
+        <a href="https://www.productsandstores.com" target="_blank" rel="noopener" class="btn-primary" style="white-space:normal;text-align:center;line-height:1.6;max-width:100%;">Browse the Full Range at productsandstores.com <i class="ri-arrow-right-up-line"></i></a>
       </div>
     </div>
   </section>
@@ -474,40 +517,6 @@
     </div>
   </section>
 
-  <!-- INVESTOR RELATIONS -->
-  <section class="ir-wrap section-pad" id="investors">
-    <div class="container">
-      <div class="fade-up">
-        <div class="section-label">Investor Relations</div>
-        <h2 class="section-title">Governance &amp; disclosures</h2>
-        <p class="section-desc">SRPL is committed to transparency and disciplined corporate governance. Statutory and financial information will be published in this section.</p>
-      </div>
-      <div class="ir-grid">
-        <div class="ir-card fade-up">
-          <div class="ir-icon"><i class="ri-government-line"></i></div>
-          <h4>Corporate Governance</h4>
-          <p>Board of Directors, committee composition and governance policies.</p>
-          <span class="ir-badge"><i class="ri-time-line" aria-hidden="true"></i> To be published</span>
-        </div>
-        <div class="ir-card fade-up">
-          <div class="ir-icon"><i class="ri-line-chart-line"></i></div>
-          <h4>Financial Information</h4>
-          <p>Annual reports, audited financial statements and periodic results.</p>
-          <span class="ir-badge"><i class="ri-time-line" aria-hidden="true"></i> To be published</span>
-        </div>
-        <div class="ir-card fade-up">
-          <div class="ir-icon"><i class="ri-file-shield-2-line"></i></div>
-          <h4>Statutory Disclosures</h4>
-          <p>Company registration details, regulatory filings and shareholder information.</p>
-          <span class="ir-badge"><i class="ri-time-line" aria-hidden="true"></i> To be published</span>
-        </div>
-      </div>
-      <div class="ir-note fade-up">
-        <p>This section is being prepared. For investor or partnership enquiries in the interim, please contact us at <a href="mailto:info@mantralayagroup.com" style="color:var(--orange);font-weight:600;">info@mantralayagroup.com</a> or +91 7095 303 303.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- GROUP STRIP -->
   <section class="group-strip">
     <div class="container">
@@ -528,7 +537,7 @@
         <div class="fade-up">
           <div class="section-label">Contact</div>
           <h2 class="section-title">Speak with our team</h2>
-          <p class="section-desc">For supply enquiries, distribution partnerships or investor questions.</p>
+          <p class="section-desc">For supply enquiries, product orders or distribution partnerships.</p>
           <div class="contact-info">
             <div class="contact-info-item">
               <div class="icon-wrap"><i class="ri-map-pin-2-line"></i></div>
@@ -582,7 +591,8 @@
             <li><a href="#overview">Overview</a></li>
             <li><a href="#segments">Business Segments</a></li>
             <li><a href="#strengths">Strengths</a></li>
-            <li><a href="#investors">Investor Relations</a></li>
+            <li><a href="#range">Products</a></li>
+            <li><a href="https://www.productsandstores.com" target="_blank" rel="noopener">productsandstores.com</a></li>
             <li><a href="https://www.mantralayagroup.com">Mantralaya Group</a></li>
           </ul>
         </div>
@@ -662,6 +672,37 @@
 
     // DYNAMIC YEAR
     document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+
+    // TYPEWRITER
+    (function() {
+      const words = [
+        'Packaging Products',
+        'Plastic Sutli & Twine',
+        'Garment Bags',
+        'Non-Woven Fabric',
+        'Jewellery Package Bags',
+        'Milk Pouches',
+        'BOPP Bags',
+        'Treated Rolls & Packaging Films',
+        'Ropes'
+      ];
+      let wordIndex = 0, charIndex = 0, isDeleting = false;
+      const typeEl = document.getElementById('typewriter-text');
+      if (!typeEl) return;
+      function typewrite() {
+        const w = words[wordIndex];
+        if (isDeleting) {
+          typeEl.textContent = w.substring(0, charIndex--);
+          if (charIndex < 0) { isDeleting = false; wordIndex = (wordIndex + 1) % words.length; }
+          setTimeout(typewrite, 30);
+        } else {
+          typeEl.textContent = w.substring(0, charIndex++);
+          if (charIndex > w.length) { isDeleting = true; setTimeout(typewrite, 2000); }
+          else setTimeout(typewrite, 60);
+        }
+      }
+      typewrite();
+    })();
   </script>
 
 </body>
